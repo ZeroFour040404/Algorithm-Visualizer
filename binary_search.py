@@ -138,7 +138,7 @@ class BinarySearchApp(QMainWindow):
         self.mid = math.floor((self.first + self.last) / 2)
         if self.first > self.last:
             self.box.setText("Failed")
-            self.attempts.setText(self.attempts.text() + ' | Failed')
+            self.attempts.setText(self.attempts.text() + ' | Failed | Not in List')
             self.clock.stop()
             return
         
