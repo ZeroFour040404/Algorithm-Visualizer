@@ -3,6 +3,7 @@ from PyQt5.QtGui import QIcon, QFont
 from PyQt5.QtCore import Qt, QTimer
 import sys
 import binary_search
+import linear_search
 
 class AlgorithmVisualizer(QMainWindow):
     def __init__(self):
@@ -32,7 +33,8 @@ class AlgorithmVisualizer(QMainWindow):
         self.show()
 
     def startVisualization(self):
-        print("Visualization started!")
+        self.linear_search_app = linear_search.LinearSearchApp()
+        self.linear_search_app.show()
 
     def startBinarySearch(self):
         self.binary_search_app = binary_search.BinarySearchApp()
