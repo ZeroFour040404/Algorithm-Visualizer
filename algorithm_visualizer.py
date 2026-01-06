@@ -18,16 +18,6 @@ class AlgorithmVisualizer(QMainWindow):
         self.titleLabel.setFont(QFont('Arial', 24))
         self.titleLabel.setAlignment(Qt.AlignCenter)
         self.titleLabel.setGeometry(200, 50, 400, 50)
-        
-        self.target = QLineEdit(self)
-        self.target.setFont(QFont('Arial', 12))
-        self.target.setPlaceholderText('Enter target value')
-        self.target.setGeometry(150, 150, 200, 50)
-        
-        self.list = QLineEdit(self)
-        self.list.setFont(QFont('Arial', 12))   
-        self.list.setPlaceholderText('Enter list of values')
-        self.list.setGeometry(450, 150, 200, 50)
 
         self.linear_search_button = QPushButton('Linear Search', self)
         self.linear_search_button.setFont(QFont('Arial', 14))
@@ -45,7 +35,7 @@ class AlgorithmVisualizer(QMainWindow):
         print("Visualization started!")
 
     def startBinarySearch(self):
-        self.binary_search_app = binary_search.BinarySearchApp(self.list.text(), self.target.text())
+        self.binary_search_app = binary_search.BinarySearchApp()
         self.binary_search_app.show()
         
 
