@@ -4,6 +4,7 @@ from PyQt5.QtCore import Qt, QTimer
 import sys
 import binary_search
 import linear_search
+import merge_sort
 
 class AlgorithmVisualizer(QMainWindow):
     def __init__(self):
@@ -22,13 +23,18 @@ class AlgorithmVisualizer(QMainWindow):
 
         self.linear_search_button = QPushButton('Linear Search', self)
         self.linear_search_button.setFont(QFont('Arial', 14))
-        self.linear_search_button.setGeometry(250, 250, 300, 40)
+        self.linear_search_button.setGeometry(250, 150, 300, 40)
         self.linear_search_button.clicked.connect(self.startVisualization)
         
         self.binary_search_button = QPushButton('Binary Search', self)
         self.binary_search_button.setFont(QFont('Arial', 14))
-        self.binary_search_button.setGeometry(250, 300, 300, 40)
+        self.binary_search_button.setGeometry(250, 200, 300, 40)
         self.binary_search_button.clicked.connect(self.startBinarySearch)
+        
+        self.binary_search_button = QPushButton('Merge Sort', self)
+        self.binary_search_button.setFont(QFont('Arial', 14))
+        self.binary_search_button.setGeometry(250, 250, 300, 40)
+        self.binary_search_button.clicked.connect(self.startMergeSort)
 
         self.show()
 
@@ -39,6 +45,10 @@ class AlgorithmVisualizer(QMainWindow):
     def startBinarySearch(self):
         self.binary_search_app = binary_search.BinarySearchApp()
         self.binary_search_app.show()
+        
+    def startMergeSort(self):
+        self.merge_sort_app = merge_sort.MergeSortApp()
+        self.merge_sort_app.show()
         
 
 if __name__ == '__main__':
