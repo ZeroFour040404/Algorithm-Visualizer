@@ -30,6 +30,87 @@ class MergeSortApp(QMainWindow):
                                     font-weight: bold;
                                     """)
         
+        self.index0 = QLabel('0', self)
+        self.index0.setFont(QFont('Arial', 12))
+        self.index0.setGeometry(50, 150, 50, 50)
+        self.index0.setAlignment(Qt.AlignCenter)
+        self.index0.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index1 = QLabel('1', self)
+        self.index1.setFont(QFont('Arial', 12))
+        self.index1.setGeometry(100, 150, 50, 50)
+        self.index1.setAlignment(Qt.AlignCenter)
+        self.index1.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index2 = QLabel('2', self)
+        self.index2.setFont(QFont('Arial', 12))
+        self.index2.setGeometry(150, 150, 50, 50)
+        self.index2.setAlignment(Qt.AlignCenter)
+        self.index2.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index3 = QLabel('3', self)
+        self.index3.setFont(QFont('Arial', 12))
+        self.index3.setGeometry(200, 150, 50, 50)
+        self.index3.setAlignment(Qt.AlignCenter)
+        self.index3.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index4 = QLabel('4', self)
+        self.index4.setFont(QFont('Arial', 12))
+        self.index4.setGeometry(250, 150, 50, 50)
+        self.index4.setAlignment(Qt.AlignCenter)
+        self.index4.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index5 = QLabel('5', self)
+        self.index5.setFont(QFont('Arial', 12))
+        self.index5.setGeometry(300, 150, 50, 50)
+        self.index5.setAlignment(Qt.AlignCenter)
+        self.index5.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index6 = QLabel('6', self)
+        self.index6.setFont(QFont('Arial', 12))
+        self.index6.setGeometry(350, 150, 50, 50)
+        self.index6.setAlignment(Qt.AlignCenter)
+        self.index6.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index7 = QLabel('7', self)
+        self.index7.setFont(QFont('Arial', 12))
+        self.index7.setGeometry(400, 150, 50, 50)
+        self.index7.setAlignment(Qt.AlignCenter)
+        self.index7.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index8 = QLabel('8', self)
+        self.index8.setFont(QFont('Arial', 12))
+        self.index8.setGeometry(450, 150, 50, 50)
+        self.index8.setAlignment(Qt.AlignCenter)
+        self.index8.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        self.index9 = QLabel('9', self)
+        self.index9.setFont(QFont('Arial', 12))
+        self.index9.setGeometry(500, 150, 50, 50)
+        self.index9.setAlignment(Qt.AlignCenter)
+        self.index9.setStyleSheet("""
+                                    border: 1px solid black;
+                                    """)
+        
+        
         self.show()
         
     def merge_sort(self):
